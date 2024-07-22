@@ -1,0 +1,17 @@
+class Family:
+    def __init__(self, surname):
+        self.surname = surname
+        self.members = []
+
+    def add_member(self, first_name, age, relation):
+        member = {
+            'first_name': first_name,
+            'age': age,
+            'relation': relation
+        }
+        self.members.append(member)
+
+    def display_family(self):
+        print(f"Family Surname: {self.surname}")
+        for member in self.members:
+            print(f"{
