@@ -7,27 +7,35 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <div class="container">
         <h1>Titiksha Fashion Designing Studio</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h2>Welcome to Titiksha Fashion Designing Studio</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla scelerisque metus et lectus maximus, vitae faucibus urna placerat.</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Titiksha Fashion Designing Studio. All rights reserved.</p>
-    </footer>
+        <div id="login-form">
+            <h2>Login</h2>
+            <form id="form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+        <div id="welcome-message" style="display: none;">
+            <h2>Welcome, <span id="user-name"></span>!</h2>
+            <button id="logout">Logout</button>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sky Blue Background</title>
+</head>
+<body style="background-color: skyblue;">
+    <h1>Hello, World!</h1>
 </body>
 </html>
 
